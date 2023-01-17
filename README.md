@@ -101,7 +101,6 @@ Ie, if your first song in an array (array index of 0) has an `id` of 4, `/songs/
 ### Bonuses
 
 - Go back and try any of the previous Bonuses
-- Start building a create-react-app front end
 
 ### SUPER Bonus
 
@@ -113,7 +112,7 @@ Add functionality where if a user goes to
 - `/songs?is_favorite=false` it will only show the songs where the value of `is_favorite` is false
 
 
-# [Part 4 is a React App, see other readme for more details](./README-FE.md)
+# [Part 4 is a React App, see other readme for more details](https://github.com/9-1-pursuit/tuner-frontend)
 
 ## Part 5 
 
