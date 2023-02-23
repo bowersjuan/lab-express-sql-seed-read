@@ -1,6 +1,6 @@
 const db = require('../db/config');
 
-const getlAllSongs = async () => {
+const getAllSongs = async () => {
   try {
     const allSongs = await db.any('SELECT * FROM songs;');
     return allSongs;
@@ -9,4 +9,4 @@ const getlAllSongs = async () => {
   }
 };
 
-module.exports = { getlAllSongs };
+module.exports = { getAllSongs };
