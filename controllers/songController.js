@@ -1,8 +1,13 @@
 const express = require('express');
-const song = express.Router();
+const songs = express.Router();
+const { getAllSongs } = require('../queries/songs');
 
-song.get('/', (req, res) => {
-  res.status(200).send('Song list');
+songs.get('/', async (req, res) => {
+  const allSongs = await getAllSongs;
+
+  if (allSongs[0]) {
+    res.status(200).json(allSongs);
+  } else res.status(500).json({ error: 'No songs found' });
 });
 
-module.exports = song;
+module.exports = songs;
